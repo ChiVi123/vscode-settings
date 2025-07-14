@@ -1,0 +1,25 @@
+{
+  "folders": [],
+  "settings": {
+    "editor.formatOnSave": true,
+    "editor.fontFamily": "Cascadia Code, Fira Code, Roboto Mono, monospace",
+    "editor.fontLigatures": true,
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 120,
+    "editor.rulers": [120, 140, 160],
+    "editor.fontSize": 12,
+    "editor.tabSize": 2,
+    "cSpell.ignorePaths": [
+      "package-lock.json",
+      "node_modules",
+      "vscode-extension",
+      ".git/{info,lfs,logs,refs,objects}/**",
+      ".git/{index,*refs,*HEAD}",
+      ".vscode",
+      ".vscode-insiders",
+      "dist",
+      "build"
+    ],
+    "cSpell.words": ["Cascadia", "Fira", "streamifier"]
+  }
+}
