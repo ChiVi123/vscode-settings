@@ -1,13 +1,23 @@
 {
   "folders": [
     {
-      "path": "../HermesShop/fe-hermes-shop"
+      "name": "crimson-paradox",
+      "path": "../Labs/crimson-paradox"
     },
     {
-      "path": "../HermesShop/be-hermes-shop"
+      "name": "crimson-paradox-admin",
+      "path": "../Labs/crimson-paradox-admin"
     },
     {
-      "path": "../khgd-generator"
+      "name": "crimson-paradox-chat",
+      "path": "../Labs/crimson-paradox-chat"
+    },
+    {
+      "name": "crimson-paradox-docker",
+      "path": "../Labs/crimson-paradox-docker"
+    },
+    {
+      "path": "."
     }
   ],
   "settings": {
@@ -19,15 +29,24 @@
     "editor.rulers": [120, 140, 160],
     "editor.fontSize": 12,
     "editor.tabSize": 2,
+    "editor.defaultFormatter": "biomejs.biome",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "never",
+      "source.fixAll.biome": "explicit",
+      "source.organizeImports.biome": "explicit"
+    },
     "[typescript]": {
       "editor.codeActionsOnSave": {
-        "source.organizeImports": "explicit"
-      }
+        "source.organizeImports.biome": "explicit"
+      },
     },
     "[typescriptreact]": {
       "editor.codeActionsOnSave": {
-        "source.organizeImports": "explicit"
-      }
+        "source.organizeImports.biome": "explicit"
+      },
+    },
+    "[json]": {
+      "editor.defaultFormatter": "biomejs.biome"
     },
     "cSpell.ignorePaths": [
       "package-lock.json",
@@ -39,9 +58,9 @@
       ".vscode-insiders",
       "dist",
       "build",
-      "**/*.mock.json"
+      "**/*.mock.json",
     ],
-    "cSpell.words": ["Cascadia", "Colour", "Fira", "streamifier", "uuid"],
+    "cSpell.words": ["Cascadia", "Colour", "Fira", "uuid", "vitest"],
     "todo-tree.highlights.defaultHighlight": {
       "icon": "check",
       "type": "tag-and-comment",
@@ -49,41 +68,51 @@
       "background": "#1e1e1e",
       "opacity": 80,
       "iconColour": "#00ffff",
-      "gutterIcon": true
+      "gutterIcon": true,
     },
     "todo-tree.highlights.customHighlight": {
       "TODO:": {
         "icon": "checklist",
         "foreground": "#00ff99",
         "background": "#222222",
-        "iconColour": "#00ff99"
+        "iconColour": "#00ff99",
       },
       "FIXME:": {
         "icon": "bug",
         "foreground": "#ff5555",
         "background": "#2a0000",
-        "iconColour": "#ff5555"
+        "iconColour": "#ff5555",
       },
       "NOTE:": {
         "icon": "note",
         "foreground": "#ffffff",
         "background": "#333333",
-        "iconColour": "#ffffff"
+        "iconColour": "#ffffff",
       },
       "[ ]:": {
         "icon": "circle",
         "foreground": "#cccccc",
         "background": "#1e1e1e",
-        "iconColour": "#cccccc"
+        "iconColour": "#cccccc",
       },
       "[x]:": {
         "icon": "check",
         "foreground": "#00ff00",
         "background": "#1e1e1e",
-        "iconColour": "#00ff00"
-      }
+        "iconColour": "#00ff00",
+      },
     },
     "todo-tree.general.tags": ["TODO:", "FIXME:", "NOTE:", "[ ]:", "[x]:"],
-    "todo-tree.filtering.includeGlobs": ["**/src/**/*"]
-  }
+    "todo-tree.filtering.includeGlobs": [
+      "**/src/**/*",
+      "**/tests/**/*"
+    ],
+    "liveServer.settings.multiRootWorkspaceName": "dist",
+    "[html]": {
+      "editor.defaultFormatter": "biomejs.biome"
+    },
+    "[jsonc]": {
+      "editor.defaultFormatter": "biomejs.biome"
+    }
+  },
 }
