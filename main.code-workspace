@@ -19,15 +19,24 @@
     "editor.rulers": [120, 140, 160],
     "editor.fontSize": 12,
     "editor.tabSize": 2,
+    "editor.defaultFormatter": "biomejs.biome",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "never",
+      "source.fixAll.biome": "explicit",
+      "source.organizeImports.biome": "explicit"
+    },
     "[typescript]": {
       "editor.codeActionsOnSave": {
-        "source.organizeImports": "explicit"
-      }
+        "source.organizeImports.biome": "explicit"
+      },
     },
     "[typescriptreact]": {
       "editor.codeActionsOnSave": {
-        "source.organizeImports": "explicit"
-      }
+        "source.organizeImports.biome": "explicit"
+      },
+    },
+    "[json]": {
+      "editor.defaultFormatter": "biomejs.biome"
     },
     "cSpell.ignorePaths": [
       "package-lock.json",
@@ -84,6 +93,16 @@
       }
     },
     "todo-tree.general.tags": ["TODO:", "FIXME:", "NOTE:", "[ ]:", "[x]:"],
-    "todo-tree.filtering.includeGlobs": ["**/src/**/*"]
-  }
+    "todo-tree.filtering.includeGlobs": [
+      "**/src/**/*",
+      "**/tests/**/*"
+    ],
+    "liveServer.settings.multiRootWorkspaceName": "dist",
+    "[html]": {
+      "editor.defaultFormatter": "biomejs.biome"
+    },
+    "[jsonc]": {
+      "editor.defaultFormatter": "biomejs.biome"
+    }
+  },
 }
