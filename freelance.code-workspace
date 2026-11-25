@@ -1,0 +1,92 @@
+{
+  "folders": [
+    {
+      "path": "../khbg-generator"
+    }
+  ],
+  "settings": {
+    "editor.formatOnSave": true,
+    "editor.fontFamily": "Cascadia Code, Fira Code, Roboto Mono, monospace",
+    "editor.fontLigatures": true,
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 120,
+    "editor.rulers": [
+      120,
+      140,
+      160
+    ],
+    "editor.fontSize": 12,
+    "editor.tabSize": 2,
+    "cSpell.ignorePaths": [
+      "package-lock.json",
+      "node_modules",
+      "vscode-extension",
+      ".git/{info,lfs,logs,refs,objects}/**",
+      ".git/{index,*refs,*HEAD}",
+      ".vscode",
+      ".vscode-insiders",
+      "dist",
+      "build",
+      "**/*.mock.json"
+    ],
+    "cSpell.words": [
+      "Cascadia",
+      "Colour",
+      "Fira",
+      "streamifier",
+      "uuid"
+    ],
+    "todo-tree.highlights.defaultHighlight": {
+      "icon": "check",
+      "type": "tag-and-comment",
+      "foreground": "#00ffff",
+      "background": "#1e1e1e",
+      "opacity": 80,
+      "iconColour": "#00ffff",
+      "gutterIcon": true
+    },
+    "todo-tree.highlights.customHighlight": {
+      "TODO:": {
+        "icon": "checklist",
+        "foreground": "#00ff99",
+        "background": "#222222",
+        "iconColour": "#00ff99"
+      },
+      "FIXME:": {
+        "icon": "bug",
+        "foreground": "#ff5555",
+        "background": "#2a0000",
+        "iconColour": "#ff5555"
+      },
+      "NOTE:": {
+        "icon": "note",
+        "foreground": "#ffffff",
+        "background": "#333333",
+        "iconColour": "#ffffff"
+      },
+      "[ ]:": {
+        "icon": "circle",
+        "foreground": "#cccccc",
+        "background": "#1e1e1e",
+        "iconColour": "#cccccc"
+      },
+      "[x]:": {
+        "icon": "check",
+        "foreground": "#00ff00",
+        "background": "#1e1e1e",
+        "iconColour": "#00ff00"
+      }
+    },
+    "todo-tree.general.tags": [
+      "TODO:",
+      "FIXME:",
+      "NOTE:",
+      "[ ]:",
+      "[x]:"
+    ],
+    "todo-tree.filtering.includeGlobs": [
+      "**/src/**/*",
+      "**/tests/**/*"
+    ],
+  }
+}
